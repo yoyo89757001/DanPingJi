@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/write"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/op"
+        layout="@layout/base_title"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button
+            android:text="设置IP摄像头地址"
+            android:textSize="14sp"
+            android:textColor="@color/write"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/shezhiip"
+            android:background="@drawable/jiaohu3"
+            android:layout_height="38dp" />
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button
+            android:text="检查更新"
+            android:textSize="14sp"
+            android:textColor="@color/write"
+            android:layout_width="80dp"
+            android:id="@+id/jiancha"
+            android:background="@drawable/jiaohu3"
+            android:layout_height="36dp" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button
+            android:text="查询比对记录"
+            android:textSize="14sp"
+            android:textColor="@color/write"
+            android:layout_width="120dp"
+            android:id="@+id/chaxun"
+            android:background="@drawable/jiaohu3"
+            android:layout_height="36dp" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/bg_color"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button
+            android:text="设置主机地址"
+            android:textSize="14sp"
+            android:textColor="@color/write"
+            android:layout_width="120dp"
+            android:id="@+id/zhuji"
+            android:background="@drawable/jiaohu3"
+            android:layout_height="36dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button
+            android:text="绑定设备"
+            android:textSize="14sp"
+            android:textColor="@color/write"
+            android:layout_width="120dp"
+            android:id="@+id/jiudian"
+            android:background="@drawable/jiaohu3"
+            android:layout_height="36dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/sbc_header_text"
+            android:textSize="18sp"
+            android:text="中国电信"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/banben"
+            android:textColor="@color/sbc_header_text"
+            android:textSize="18sp"
+            android:text="V1.0.0"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

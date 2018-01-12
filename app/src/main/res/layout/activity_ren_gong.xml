@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuntongzuoshi.ui.RenGongActivity">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:id="@+id/fff"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:text="请正视摄像头,不要晃动哦!"
+        android:layout_width="wrap_content"
+        android:textColor="@color/write"
+        android:textSize="28sp"
+        android:visibility="gone"
+        android:id="@+id/tishi1"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="3"
+        android:id="@+id/tishi2"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/tishi1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/huang"
+        android:textSize="48sp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/jiemian"
+        android:background="@drawable/beijin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:text="人工服务"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="460dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/paizhao"
+                android:layout_marginTop="100dp"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/topop"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:text="点击上面拍照"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@drawable/baisetouming"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="姓        名:   "
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:hint="请输入姓名"
+                        android:maxLength="11"
+                        android:textColor="@color/blake"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="手  机  号:   "
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dianhua"
+                android:layout_width="230dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/zidonghuoqu10"
+                android:gravity="center"
+                android:hint="请输入本人手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/blake"
+                android:textColorHint="#FF8C8C8C"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="来访日期:   "
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/qixian"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:textColor="@color/blake"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="14sp"
+                        android:hint="请选择来访日期"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="被  访  人:   "
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/dizhi"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:textColor="@color/blake"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="14sp"
+                        android:hint="请输入被访人姓名"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="手  机  号:   "
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/chepai"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:maxLength="11"
+                        android:hint="请输入被访人手机号"
+                        android:textColorHint="#FF8C8C8C"
+                        android:inputType="phone"
+                        android:textColor="@color/blake"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="被访人部门:"
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/renshu"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:textColor="@color/blake"
+                        android:textSize="14sp"
+                        android:textColorHint="#FF8C8C8C"
+                        android:hint="请选择被访人部门"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="来访事由:   "
+                        android:textColor="@color/contents_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/mudi"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/zidonghuoqu10"
+                        android:gravity="center"
+                        android:hint="请选择来访事由"
+                        android:textColor="@color/blake"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            <Button
+                android:text="提      交"
+                android:textSize="14sp"
+                android:id="@+id/wancheng"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/write"
+                android:background="@drawable/jiaohu"
+                android:layout_width="170dp"
+                android:layout_height="40dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
