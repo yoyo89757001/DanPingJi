@@ -87,15 +87,12 @@ public class MyAppLaction extends Application{
         mDaoMaster = new DaoMaster(db);
         mDaoSession = mDaoMaster.newSession();
 
-
     }
 
 
     public  DaoSession getDaoSession() {
         return mDaoSession;
     }
-
-
 
 
 //        Log.d("MainActivity", "OpenCVLoader.initDebug():" + OpenCVLoader.initDebug());
@@ -126,8 +123,6 @@ public class MyAppLaction extends Application{
 //        } catch (IOException e) {
 //            Log.d("InFoActivity2", e.getMessage());
 //        }
-
-
 
 
 }

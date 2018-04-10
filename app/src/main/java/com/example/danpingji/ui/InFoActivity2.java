@@ -28,7 +28,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.danpingji.MainActivity;
 import com.example.danpingji.MyAppLaction;
 import com.example.danpingji.R;
 import com.example.danpingji.beans.BaoCunBean;
@@ -114,9 +113,6 @@ public class InFoActivity2 extends Activity implements SurfaceHolder.Callback {
     private boolean isTiJiao=false;
     private String pathyy="";
     private IDCardRecognition mIDCardRecognition;
-
-
-
 
 
 
@@ -228,7 +224,7 @@ public class InFoActivity2 extends Activity implements SurfaceHolder.Callback {
 
                     String fn="aaaa.jpg";
                     FileUtil.isExists(FileUtil.PATH,fn);
-                    userInfoBena = new UserInfoBena(card.getName(), card.getSexStr().equals("男") ? 1 + "" : 2 + "", card.getNationStr(),
+                    userInfoBena = new UserInfoBena(card.getName().trim(), card.getSexStr().equals("男") ? 1 + "" : 2 + "", card.getNationStr(),
                             card.getBirthDate().toString(), card.getAddress(), card.getIdCardNum(), card.getSignOffice(), card.getUsefulEndDate().toString(), card.getUsefulStartDate().toString(), null, null, null);
 
                     saveBitmap2File(bitmap.copy(Bitmap.Config.ARGB_8888,false), FileUtil.SDPATH+ File.separator+FileUtil.PATH+File.separator+fn,100);
